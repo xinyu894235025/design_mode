@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="design_mode-dao" />
+        <module name="design_mode-domain" />
+        <module name="design_mode-service" />
+        <module name="design_mode-web" />
+        <module name="design_mode-common" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="design-mode" target="1.8" />
+      <module name="design_mode-common" target="1.8" />
+      <module name="design_mode-dao" target="1.8" />
+      <module name="design_mode-domain" target="1.8" />
+      <module name="design_mode-service" target="1.8" />
+      <module name="design_mode-web" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="design-mode" options="-parameters" />
+      <module name="design_mode-common" options="-parameters" />
+      <module name="design_mode-dao" options="-parameters" />
+      <module name="design_mode-domain" options="-parameters" />
+      <module name="design_mode-service" options="-parameters" />
+      <module name="design_mode-web" options="-parameters" />
+    </option>
+  </component>
+</project>

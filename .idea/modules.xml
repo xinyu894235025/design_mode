@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/design-mode.iml" filepath="$PROJECT_DIR$/design-mode.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design_mode-common/design_mode-common.iml" filepath="$PROJECT_DIR$/design_mode-common/design_mode-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design_mode-dao/design_mode-dao.iml" filepath="$PROJECT_DIR$/design_mode-dao/design_mode-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design_mode-domain/design_mode-domain.iml" filepath="$PROJECT_DIR$/design_mode-domain/design_mode-domain.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design_mode-service/design_mode-service.iml" filepath="$PROJECT_DIR$/design_mode-service/design_mode-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/design_mode-web/design_mode-web.iml" filepath="$PROJECT_DIR$/design_mode-web/design_mode-web.iml" />
+    </modules>
+  </component>
+</project>
