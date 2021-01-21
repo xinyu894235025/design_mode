@@ -19,7 +19,7 @@ public class TestSingleton {
     );
 
     public static void main(String[] args) {
-        LazySingleton lazyInstance = LazySingleton.getInstance();
+        LazySingletonObject lazyInstance = LazySingletonObject.getInstance();
         long a = System.currentTimeMillis();
         executor.execute(() -> {
             for (int i = 0; i < 50; i++) {
@@ -34,7 +34,7 @@ public class TestSingleton {
             System.out.println(Thread.currentThread().getName());
         });
         executor.execute(() -> {
-            LazySingleton instance = LazySingleton.getInstance();
+            LazySingletonObject instance = LazySingletonObject.getInstance();
             System.out.println(instance.getA());
         });
         long b = System.currentTimeMillis();

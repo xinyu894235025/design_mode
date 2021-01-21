@@ -12,18 +12,18 @@ import java.util.Objects;
  * 这种方式 lazy loading 很明显，不要求线程安全，在多线程不能正常工作。
  * 线程安全只需要在方法体上加入 synchronized 关键字，但是会影响效率
  */
-public class LazySingleton {
+public class LazySingletonObject {
 
-    private static LazySingleton lazySingleton;
+    private static LazySingletonObject lazySingleton;
 
     private int a = 0;
 
-    private LazySingleton() {
+    private LazySingletonObject() {
     }
 
-    public static synchronized LazySingleton getInstance() {
+    public static synchronized LazySingletonObject getInstance() {
         if (Objects.isNull(lazySingleton)) {
-            lazySingleton = new LazySingleton();
+            lazySingleton = new LazySingletonObject();
         }
         return lazySingleton;
     }
