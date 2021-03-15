@@ -11,19 +11,22 @@ import java.util.Objects;
  */
 public class DCLSingletonObject {
 
-    private static DCLSingletonObject dclSingletonObject;
+    private static volatile DCLSingletonObject INSTANCE;
 
     private DCLSingletonObject() {
     }
 
-    public static DCLSingletonObject getInstance() {
-        if (Objects.isNull(dclSingletonObject)) {
-            synchronized (DCLSingletonObject.class) {
-                if (Objects.isNull(dclSingletonObject)) {
-                    return new DCLSingletonObject();
+    public static DCLSingletonObject getInstance(){
+        //外部校验，减少锁资源的获取频率
+        if (Objects.isNull(INSTANCE)){
+            //加锁，保证线程安全
+            synchronized (DCLSingletonObject.class){
+                //第二次校验，防止第二次创建对象
+                if (Objects.isNull(INSTANCE)){
+                    INSTANCE = new DCLSingletonObject();
                 }
             }
         }
-        return dclSingletonObject;
+        return INSTANCE;
     }
 }
