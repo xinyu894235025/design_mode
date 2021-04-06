@@ -3,10 +3,7 @@ package com.xinyu.design_mode.common.applet.abstract_factory_mode.impl.color;
 import com.xinyu.design_mode.common.applet.abstract_factory_mode.AbstractFactory;
 import com.xinyu.design_mode.common.applet.abstract_factory_mode.Color;
 import com.xinyu.design_mode.common.applet.abstract_factory_mode.Shape;
-import com.xinyu.design_mode.common.applet.abstract_factory_mode.impl.shape.Circle;
-import com.xinyu.design_mode.common.applet.abstract_factory_mode.impl.shape.Square;
 import com.xinyu.design_mode.common.enums.ColorEnums;
-import com.xinyu.design_mode.common.enums.ShapeEnums;
 import org.apache.commons.lang3.StringUtils;
 
 /**
