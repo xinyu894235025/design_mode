@@ -17,7 +17,7 @@ public class YelloShapeDecorator extends ShapeDecorator {
         System.out.println("Border Color: Yello");
     }
 
-    private void setRedBorder(Shape decoratedShape){
+    private void setRedBorder(Shape decoratedShape) {
         System.out.println("Border Color: Red");
     }
 }

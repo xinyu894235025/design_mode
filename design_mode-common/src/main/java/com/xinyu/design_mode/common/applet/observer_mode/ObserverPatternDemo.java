@@ -1,7 +1,7 @@
 package com.xinyu.design_mode.common.applet.observer_mode;
 
 /**
- * @Description
+ * @Description 观察者模式
  * @Author xinyu4
  * @Date 2021/1/21/0021 14:45
  */

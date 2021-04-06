@@ -4,7 +4,7 @@ import com.xinyu.design_mode.common.applet.abstract_factory_mode.AbstractFactory
 import com.xinyu.design_mode.common.applet.abstract_factory_mode.Color;
 import com.xinyu.design_mode.common.applet.abstract_factory_mode.FactoryProducer;
 import com.xinyu.design_mode.common.applet.abstract_factory_mode.Shape;
-import com.xinyu.design_mode.common.applet.factory_mode.impl.ShapeFactory;
+import com.xinyu.design_mode.common.applet.factory_mode.ShapeFactory;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
